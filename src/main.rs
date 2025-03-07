@@ -1,25 +1,13 @@
-use std::{env, fs};
+//! # Keccak CLI Tool
+//!
+//! `keccak_cli_tool` binary crate performs a keccak256 hash on any standard input
+//! arguments, either as a string or a file if it exists
 
-pub mod hash;
+use std::env;
+use keccak_cli_tool::hash_logic;
 
 fn main() {
-    let args: Vec<String> = env::args().collect();
-    let mut digests = Vec::new();
-
-    for arg in &args[1..] {
-        match fs::read(arg) {
-            Ok(file) => {
-                digests.push(file);
-            }
-            _ => {
-                digests.push(arg.bytes().collect());
-            }
-        }
-    }
-
-    for digest in &mut digests {
-        println!("{:?}", digest);
-        let hash_result = hash::return_hash(digest);
-        println!("{:?}", hash_result);
-    }
+    let mut args: Vec<String> = env::args().collect();
+    args.remove(0);     // Remove the first argument, which is the name of the program
+    hash_logic(args);
 }
