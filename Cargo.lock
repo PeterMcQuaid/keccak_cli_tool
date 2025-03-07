@@ -159,7 +159,7 @@ dependencies = [
 
 [[package]]
 name = "keccak_cli_tool"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "hex-literal",
  "keccak-hash",

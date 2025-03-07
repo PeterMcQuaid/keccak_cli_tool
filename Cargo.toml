@@ -1,9 +1,10 @@
 [package]
 name = "keccak_cli_tool"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 license = "MIT"
 description = "Simple Keccak256 hash CLI tool"
+repository = "https://github.com/PeterMcQuaid/keccak_cli_tool"
 
 [dependencies]
 keccak-hash = "0.11.0"
