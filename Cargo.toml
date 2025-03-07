@@ -3,6 +3,7 @@ name = "keccak_cli_tool"
 version = "0.1.0"
 edition = "2021"
 license = "MIT"
+description = "Simple Keccak256 hash CLI tool"
 
 [dependencies]
 keccak-hash = "0.11.0"
