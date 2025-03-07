@@ -1,7 +1,7 @@
 
 <a name="readme-top"></a>
 
-[![Unit Tests](https://github.com/PeterMcQuaid/keccak_cli_tool/actions/workflows/build.yaml/badge.svg)](https://github.com/PeterMcQuaid/keccak_cli_tool/actions/workflows/build.yaml) [![Rust Version](https://img.shields.io/badge/rust-1.85.0+-blue.svg)](https://www.rust-lang.org) [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE) 
+[![Unit Tests](https://github.com/PeterMcQuaid/keccak_cli_tool/actions/workflows/rust.yml/badge.svg)](https://github.com/PeterMcQuaid/keccak_cli_tool/actions/workflows/rust.yml) [![Rust Version](https://img.shields.io/badge/rust-1.85.0+-blue.svg)](https://www.rust-lang.org) [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE) 
 
 
 <!-- PROJECT LOGO -->
@@ -40,6 +40,7 @@ cargo build
 ## Testing
     
 1. Run unit-tests in root directory 
+
     ```
     cargo test
     ```
@@ -47,6 +48,7 @@ cargo build
 ## Usage
 
 1. Test simple string and contents of `test.txt`:
+
     ```
     cargo run -- "hello" "test.txt"
     ```
